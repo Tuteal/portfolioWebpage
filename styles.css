@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+div {
+    padding: 6em;
+    margin: 6em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+h1 {
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 900;
+    font-size: 10em;
+    line-height: 0.8; /* Adjust the value as needed */
+}
+
+p {
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Your tablet-specific CSS rules here */
+    body{
+        margin: 1em;
+    }
+
+    h1 {
+        font-size: 7em;
+    }
+
+    p {
+        top: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    div {
+        outline: 1px solid red;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    h1 {
+        margin-top: 7.5em;
+        font-size: 5em;
+        font-weight: 900;
+        line-height: .8;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1em;
+        top: 90%;
+    }
+}
+
+
+
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
